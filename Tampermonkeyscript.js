@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         CakeSnipeX
 // @namespace    https://raw.githubusercontent.com/Cakedadev/CakeSnipeX/main/Tampermonkeyscript.js?token=GHSAT0AAAAAACFQRFSIKLGX3AOAIHERFGBGZJXFP4Q
-// @version      2.3
-// @description  S
+// @version      2.4
+// @description  A Tampermonkey script was created by me to improve the servers tab on the Roblox website, enabling users to freely join games without requiring a prior friendship connection(aka "Stream Sniping"). The Best Part Is This Application Uses No Exploits Meaning it's completely Allowed Via Roblox ToS, What Are You Waiting For Go Ahead And Use It :)
 // @author       CakeDaDev
 // @match        https://www.roblox.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
@@ -69,7 +69,7 @@
 
         fetchThumbs(chunk.map(({ token }) => token)).then(
           ({ data: serverThumbs }) => {
-            if (!serverThumbs) setStatus("error: " + serverThumbs);
+            if (!serverThumbs) setStatus("N/A: " + serverThumbs);
             else {
               for (let k = 0; k < serverThumbs.length; k++) {
                 const thumb = serverThumbs[k];
@@ -77,7 +77,7 @@
                   found = true;
 
                   setStatus(thumb.imageUrl);
-                  setStatus("Snipe Time! 😎");
+                  setStatus("Snipe Time! | 🍰");
 
                   const thumbToken = thumb.requestId.split(":")[1];
                   cb({
@@ -178,7 +178,7 @@
 
       const joinBtn = document.createElement("button");
       joinBtn.style.display = "none";
-      joinBtn.innerText = "Snipe 😎";
+      joinBtn.innerText = "Snipe 😎 | 🍰";
       joinBtn.classList =
         "btn-control-xs rbx-game-server-join game-server-join-btn btn-primary-md btn-min-width";
 

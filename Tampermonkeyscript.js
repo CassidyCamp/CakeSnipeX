@@ -2,7 +2,7 @@
 // @name         CakeSnipeX
 // @namespace    http://tampermonkey.net/
 // @version      2.3
-// @description  (WORKING AS OF 4/15/23) The only working stream sniper script without using exploits
+// @description  S
 // @author       CakeDaDev
 // @match        https://www.roblox.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
@@ -77,7 +77,7 @@
                   found = true;
 
                   setStatus(thumb.imageUrl);
-                  setStatus("Found Players Server!");
+                  setStatus("It's Time To SNIPE 😎");
 
                   const thumbToken = thumb.requestId.split(":")[1];
                   cb({
@@ -100,7 +100,7 @@
 
     const getUserId = (name) =>
       fetch("https://www.roblox.com/users/profile?username=" + name).then((r) => {
-        if (!r.ok) throw "User not found.";
+        if (!r.ok) throw "User not found :(";
         return r.url.match(/\d+/)[0];
       });
 
@@ -178,7 +178,7 @@
 
       const joinBtn = document.createElement("button");
       joinBtn.style.display = "none";
-      joinBtn.innerText = "Join";
+      joinBtn.innerText = "Snipe 😎";
       joinBtn.classList =
         "btn-control-xs rbx-game-server-join game-server-join-btn btn-primary-md btn-min-width";
 
@@ -205,7 +205,7 @@
           },
           (place) => {
             if (!place.found) {
-              statusText.innerText = "couldn't find them";
+              statusText.innerText = "N/A | Player Not Found";
               return;
             }
 

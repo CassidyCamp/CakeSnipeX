@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CakeSnipeX
-// @namespace    http://tampermonkey.net/
+// @namespace    https://raw.githubusercontent.com/Cakedadev/CakeSnipeX/main/Tampermonkeyscript.js?token=GHSAT0AAAAAACFQRFSIKLGX3AOAIHERFGBGZJXFP4Q
 // @version      2.3
 // @description  S
 // @author       CakeDaDev
@@ -44,7 +44,7 @@
 
         if (!cursor) break;
 
-        setStatus("next server...");
+        setStatus("loading servers...");
       }
 
       const chunkSize = 100;
@@ -64,7 +64,7 @@
         i += chunkSize;
 
         setStatus(
-          `searching servers ${Math.floor((i / allPlayerTokens.length) * 100)}%`
+          `Searching For User ${Math.floor((i / allPlayerTokens.length) * 100)}%`
         );
 
         fetchThumbs(chunk.map(({ token }) => token)).then(

@@ -126,7 +126,7 @@
           targetId: 0,
           token,
           format: "png",
-          size: "150x150",
+          size: "250x250",
         });
       });
 
@@ -154,7 +154,7 @@
       const form = document.createElement("form");
 
       const thumbImage = document.createElement("img");
-      thumbImage.height = "40";
+      thumbImage.height = "80";
       thumbImage.display = "none";
       containerHeader.appendChild(thumbImage);
 

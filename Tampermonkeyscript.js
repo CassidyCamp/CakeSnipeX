@@ -44,7 +44,7 @@
 
         if (!cursor) break;
 
-        setStatus("loading servers...");
+        setStatus("Loading...");
       }
 
       const chunkSize = 100;
@@ -77,7 +77,7 @@
                   found = true;
 
                   setStatus(thumb.imageUrl);
-                  setStatus("It's Time To SNIPE 😎");
+                  setStatus("Snipe Time! 😎");
 
                   const thumbToken = thumb.requestId.split(":")[1];
                   cb({
@@ -205,7 +205,7 @@
           },
           (place) => {
             if (!place.found) {
-              statusText.innerText = "N/A | Player Not Found";
+              statusText.innerText = "N/A | 🍰";
               return;
             }
 

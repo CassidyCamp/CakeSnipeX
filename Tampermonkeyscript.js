@@ -168,7 +168,7 @@
 
     const submitButton = document.createElement("button");
     submitButton.classList = "btn-primary-md";
-    submitButton.innerText = "Snipe-Request | Cake Sniper 🍰";
+    submitButton.innerText = "Snipe | Cake Sniper 🍰";
     submitButton.disabled = true;
     form.appendChild(submitButton);
 
@@ -181,7 +181,7 @@
 
     const joinBtn = document.createElement("button");
     joinBtn.style.display = "none";
-    joinBtn.innerText = "Snipe | 🍰";
+    joinBtn.innerText = "Snipe | 😈";
     joinBtn.classList =
       "btn-control-xs rbx-game-server-join game-server-join-btn btn-primary-md btn-min-width";
 

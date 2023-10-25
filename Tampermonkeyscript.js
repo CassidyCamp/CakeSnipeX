@@ -106,7 +106,7 @@
 
     const getThumb = (id) =>
       getJSON(
-        `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${id}&format=Png&size=150x150`
+        `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${id}&format=Png&size=250x250`
       ).then((d) => d.data[0].imageUrl);
 
     const getServer = (placeId, cursor) => {

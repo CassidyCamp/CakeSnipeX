@@ -6,4 +6,5 @@ A Tampermonkey script was created by me to improve the servers tab on the Roblox
 - Open Tampermonkey in your browser and click the Add Script tab (icon with a plus symbol)
 - Paste the source into the script window and hit save.
 - Voila!
-https://wakatime.com/badge/user/018b5e8a-6bc5-41bd-896b-924ea55f4d7a/project/018b5e8c-fafb-4a7e-b83b-3fc524c3ea10.svg
+# Stats
+<a href="https://wakatime.com/badge/user/018b5e8a-6bc5-41bd-896b-924ea55f4d7a/project/018b5e8c-fafb-4a7e-b83b-3fc524c3ea10"><img src="https://wakatime.com/badge/user/018b5e8a-6bc5-41bd-896b-924ea55f4d7a/project/018b5e8c-fafb-4a7e-b83b-3fc524c3ea10.svg" alt="wakatime"></a>

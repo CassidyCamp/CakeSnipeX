@@ -47,7 +47,7 @@
 
       if (!cursor) break;
 
-      setStatus("Loading... | 🍰");
+      setStatus("Loading... | Cake Sniper 🍰");
     }
 
     const chunkSize = 100;
@@ -80,7 +80,7 @@
                 found = true;
 
                 setStatus(thumb.imageUrl);
-                setStatus("Found >:) | 🍰");
+                setStatus("Found >:) | Cake Sniper 🍰");
 
                 const thumbToken = thumb.requestId.split(":")[1];
                 cb({
@@ -168,7 +168,7 @@
 
     const submitButton = document.createElement("button");
     submitButton.classList = "btn-primary-md";
-    submitButton.innerText = "Snipe-Request | 🍰";
+    submitButton.innerText = "Snipe-Request | Cake Sniper 🍰";
     submitButton.disabled = true;
     form.appendChild(submitButton);
 
